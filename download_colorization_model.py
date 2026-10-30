@@ -8,22 +8,22 @@ import shutil
 MODEL_DIR = Path(__file__).resolve().parent / "models"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
+
 FILES = {
     "colorization_deploy_v2.prototxt": (
-        "https://mirror.opencv.ai/colorization_release_v2.caffemodel"
-        "colorization/models/colorization_deploy_v2.prototxt",
-        9000,
+        "https://mirror.opencv.ai/colorization_deploy_v2.prototxt",
+        9_000,
     ),
     "colorization_release_v2.caffemodel": (
         "https://mirror.opencv.ai/colorization_release_v2.caffemodel",
         50_000_000,
     ),
     "pts_in_hull.npy": (
-        "https://raw.githubusercontent.com/richzhang/colorization/caffe/"
-        "colorization/resources/pts_in_hull.npy",
+        "https://raw.githubusercontent.com/richzhang/colorization/caffe/colorization/resources/pts_in_hull.npy",
         1_000,
     ),
 }
+
 
 
 def download(filename, url, minimum_size):
