@@ -1,0 +1,29 @@
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+**/__pycache__/
+
+# React dependencies and build
+node_modules/
+**/node_modules/
+frontend_new_2/dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+
+# Logs and temporary files
+*.log
+.DS_Store
+
+# Large AI model weights
+models/*.caffemodel
